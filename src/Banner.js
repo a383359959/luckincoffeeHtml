@@ -6,16 +6,22 @@ class Banner extends React.Component {
 
     componentDidMount() {
 
-        const clientWidth = window.innerWidth;
-        const clientHeight = window.innerHeight - 60;
-
-        document.getElementById('swiper-container').style.width = clientWidth + 'px';
-        document.getElementById('swiper-container').style.height = clientHeight + 'px';
+        this.resize();
 
         const banner = new Swiper('.swiper-container', {
             loop: true,
             autoplay: true
         });
+
+    }
+
+    resize() {
+
+        const clientWidth = window.innerWidth;
+        const clientHeight = window.innerHeight - 60;
+
+        document.getElementById('swiper-container').style.width = clientWidth + 'px';
+        document.getElementById('swiper-container').style.height = clientHeight + 'px';
 
     }
 
