@@ -1,5 +1,4 @@
 import React from 'react';
-import 'swiper/dist/css/swiper.css'
 import Swiper from 'swiper';
 
 class Banner extends React.Component {
@@ -10,18 +9,18 @@ class Banner extends React.Component {
 
         const banner = new Swiper('.swiper-container', {
             loop: true,
-            autoplay: true
+            autoplay: true,
+            autoHeight: true
         });
 
     }
 
     resize() {
 
-        const clientWidth = window.innerWidth;
-        const clientHeight = window.innerHeight - 60;
-
-        document.getElementById('swiper-container').style.width = clientWidth + 'px';
-        document.getElementById('swiper-container').style.height = clientHeight + 'px';
+        // const clientWidth = window.innerWidth;
+        //
+        // document.getElementById('swiper-container').style.width = clientWidth + 'px';
+        // document.getElementById('swiper-container').style.height = '300px';
 
     }
 

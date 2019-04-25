@@ -18,7 +18,7 @@ class Item_6 extends React.Component{
 
         return (
             <li id={'other'} className={'animate-item'}>
-                <div className={'item-wrap img-el show-animate'} style={style_1}>
+                <div className={'item-wrap img-el'} style={style_1}>
                     <div className={'other-content'}>
                         <div className={'hd'}></div>
                         <div className={'bd'}>

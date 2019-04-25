@@ -21,7 +21,7 @@ class Item_1 extends React.Component {
     render() {
 
         return (
-            <li id={'commitment'}>
+            <li id={'commitment'} className={'animate-item'}>
                 <div className={'item-wrap'}>
                     <div className={'commitment-desc'}>
                         <div className={'hd'}></div>

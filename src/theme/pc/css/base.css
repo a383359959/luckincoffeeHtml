@@ -93,7 +93,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 
 #docWrap,body,html {
     width: 100%;
-    min-width: 1140px;
+    /*min-width: 1140px;*/
     height: 100%;
     background-color: #fff
 }
@@ -178,7 +178,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 }
 
 #footer .sub-logo {
-    width: 1040px;
+    /*width: 1040px;*/
     margin: 0 auto 60px;
     height: 90px;
     background-image: url(/images/common/sub_logo@2x.png);

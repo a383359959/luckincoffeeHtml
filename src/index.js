@@ -3,55 +3,32 @@ import ReactDOM from 'react-dom';
 
 import $ from 'jquery';
 
-import './base.css';
-import './style.css';
-import './index.css';
+import 'swiper/dist/css/swiper.css'
 
-import CommonHeader from './CommonHeader';
-import Main from './Main';
-import CommonFooter from './CommonFooter';
+import PC_Index from './theme/pc/page/Index';
+import Mobile_Index from './theme/mobile/page/Index';
 
-class Container extends React.Component {
+import './theme/pc/css/base.css';
+import './theme/pc/css/style.css';
+import './theme/pc/css/index.css';
 
-    constructor(props){
-        super(props)
-        this.state = {};
-        this.scrollTop = 0;
-        this.handleScroll = this.handleScroll.bind(this)
+import './theme/mobile/css/style.css';
+import './theme/mobile/css/base.css';
+import './theme/mobile/css/index.css';
+
+loadPage();
+
+$(window).resize(function(){
+    loadPage();
+});
+
+function loadPage(){
+    var width = $(window).width();
+    if (width >= 1140) {
+        ReactDOM.render(<PC_Index />, document.getElementById('container'));
+        ReactDOM.render('', document.getElementById('root'));
+    } else {
+        ReactDOM.render('', document.getElementById('container'));
+        ReactDOM.render(<Mobile_Index />, document.getElementById('root'));
     }
-
-    componentDidMount() {
-
-        window.addEventListener('scroll', this.handleScroll)
-        // this.onsc
-
-        // $('#container').scroll((event) => {
-            // console.log(event);
-            // console.log(event.scrollTop());
-        // });
-        // this.handleScroll();
-        // window.addEventListener('scroll', this.handleScroll);
-
-    }
-
-    handleScroll(event) {
-
-        // console.log('asd');
-        console.log(event);
-
-    }
-
-    render() {
-        return (
-            <div id={'docwrap'}>
-                <CommonHeader />
-                <Main />
-                <CommonFooter />
-                <div id={'gotoTop'}></div>
-            </div>
-        );
-    }
-
 }
-
-ReactDOM.render(<Container />, document.getElementById('container'));

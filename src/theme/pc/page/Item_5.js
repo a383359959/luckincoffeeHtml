@@ -14,7 +14,7 @@ class Item_5 extends React.Component{
 
         return (
             <li id={'cooperation'} className={'animate-item'}>
-                <div className={'item-wrap show-animate'}>
+                <div className={'item-wrap'}>
                     <div className={'cooperation-text'}>
                         <div className={'hd'}></div>
                         <div className={'bd'}>

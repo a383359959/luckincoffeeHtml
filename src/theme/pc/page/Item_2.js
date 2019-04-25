@@ -10,8 +10,8 @@ class Item_2 extends React.Component {
 
         return (
             <li id={'product'} className={'animate-item'}>
-                <div className={'item-wrap img-el show-animate'} style={style_1}></div>
-                <div className={'item-wrap slogan-wrap show-animate'}>
+                <div className={'item-wrap img-el'} style={style_1}></div>
+                <div className={'item-wrap slogan-wrap'}>
                     <div className={'product-slogan'}>
                         <div className={'hd'}></div>
                         <ul className={'bd'}>
