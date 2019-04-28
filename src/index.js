@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Routers from 'router';
 
 import $ from 'jquery';
 
@@ -18,19 +19,21 @@ import './theme/mobile/css/style.css';
 import './theme/mobile/css/base.css';
 import './theme/mobile/css/index.css';
 
-loadPage();
 
-$(window).resize(function(){
-    loadPage();
-});
-
-function loadPage(){
-    var width = $(window).width();
-    if (width >= 1140) {
-        ReactDOM.render(<PC_Index />, document.getElementById('container'));
-        ReactDOM.render('', document.getElementById('root'));
-    } else {
-        ReactDOM.render('', document.getElementById('container'));
-        ReactDOM.render(<Mobile_Index />, document.getElementById('root'));
-    }
-}
+ReactDOM.render(<Routers />, document.getElementById('container'));
+// loadPage();
+//
+// $(window).resize(function(){
+//     loadPage();
+// });
+//
+// function loadPage(){
+//     var width = $(window).width();
+//     if (width >= 1140) {
+//         ReactDOM.render(<PC_Index />, document.getElementById('container'));
+//         ReactDOM.render('', document.getElementById('root'));
+//     } else {
+//         ReactDOM.render('', document.getElementById('container'));
+//         ReactDOM.render(<Mobile_Index />, document.getElementById('root'));
+//     }
+// }
