@@ -891,11 +891,11 @@
     color: #172991;
     background: hsla(0,0%,100%,.8)
 }
-.swiper-container {
+.mobile_banner .swiper-container {
     width: 100%;
     height: 300px;
 }
-.swiper-container img{
+.mobile_banner .swiper-container img{
     width: 100%;
     height: 300px;
     display: block;

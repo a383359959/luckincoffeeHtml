@@ -1,0 +1,362 @@
+.about_main,.about_main .content .about-list .teletext {
+    font-family: PingFangSC-Regular
+}
+
+.about_main .content .about-list .teletext .image .qrcode,.about_main .side-left .joinus-window .joinus-image .qrcode {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../../images/index/jobscode.png", sizingMethod='scale')
+}
+
+.banner-wrap {
+    width: 100%;
+    min-width: 1040px;
+    height: 304px;
+    position: relative;
+    overflow: hidden
+}
+
+.banner-wrap .banner {
+    width: 1920px;
+    height: 304px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    background: url(/images/banner.png)
+}
+
+.about_main {
+    width: 600px;
+    margin: 50px auto 70px;
+    padding-bottom: 0!important;
+    padding-left: 366px;
+    position: relative
+}
+
+.about_main .side-left {
+    width: 224px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.about_main .side-left .nav-list .nav-item {
+    font-size: 16px;
+    color: #999;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 96px;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #eee
+}
+
+.about_main .side-left .nav-list .nav-item.joinus {
+    border-bottom: 0
+}
+
+.about_main .side-left .nav-list .nav-item.active {
+    background: #eee;
+    color: #172991
+}
+
+.about_main .side-left .nav-list .nav-item.active.model:before {
+    background: url(/images/model_active.png)
+}
+
+.about_main .side-left .nav-list .nav-item.active.brand:before {
+    background: url(/images/brand_active.png)
+}
+
+.about_main .side-left .nav-list .nav-item.active.contact:before {
+    background: url(/images/contact_active.png)
+}
+
+.about_main .side-left .nav-list .nav-item.active.statement::before {
+    background: url(/images/statement_active.png)
+}
+
+.about_main .side-left .nav-list .nav-item.active.joinus:before {
+    background: url(/images/joinus_active.png)
+}
+
+.about_main .side-left .nav-list .nav-item:before {
+    content: '\20';
+    width: 27px;
+    height: 27px;
+    left: 45px;
+    top: 11px;
+    position: absolute
+}
+
+.about_main .side-left .nav-list .nav-item.model:before {
+    background: url(/images/model.png)
+}
+
+.about_main .side-left .nav-list .nav-item.brand:before {
+    background: url(/images/brand.png)
+}
+
+.about_main .side-left .nav-list .nav-item.contact:before {
+    background: url(/images/contact.png)
+}
+
+.about_main .side-left .nav-list .nav-item.statement:before {
+    background: url(/images/statement.png)
+}
+
+.about_main .side-left .nav-list .nav-item.joinus:before {
+    background: url(/images/joinus.png)
+}
+
+.about_main .side-left .joinus-window {
+    margin-top: 15px
+}
+
+.about_main .side-left .joinus-window .joinus-title {
+    line-height: 18px;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 8px
+}
+
+.about_main .side-left .joinus-window .joinus-email {
+    line-height: 18px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 20px
+}
+
+.about_main .side-left .joinus-window .joinus-email a {
+    color: #172991
+}
+
+.about_main .side-left .joinus-window .joinus-image {
+    height: 154px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative
+}
+
+.about_main .side-left .joinus-window .joinus-image .qrcode {
+    width: 131px;
+    height: 131px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -65.5px;
+    background: url(/images/jobscode.png);
+    background-size: cover
+}
+
+.about_main .side-left .joinus-window .joinus-image .qrcode:before {
+    content: '\20';
+    width: 131px;
+    height: 131px;
+    position: absolute;
+    left: -12px;
+    top: -12px;
+    border: 12px solid #fff;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px rgba(0,0,0,.2)
+}
+
+.about_main .side-left .joinus-window .joinus-foot {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    line-height: 26px
+}
+
+.about_main .content {
+    width: 600px
+}
+
+.about_main .content .about-list .about-item {
+    display: none
+}
+
+.about_main .content .about-list .about-item.show {
+    display: block
+}
+
+.about_main .content .about-list .about_main-title {
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    font-weight: 600
+}
+
+.about_main .content .about-list .about_main-title:after,.about_main .content .about-list .about_main-title:before {
+    width: 48px;
+    height: 3px;
+    position: absolute;
+    bottom: -13px;
+    content: '\20'
+}
+
+.about_main .content .about-list .about_main-title:before {
+    left: 0;
+    background: #172991
+}
+
+.about_main .content .about-list .about_main-title:after {
+    left: 48px;
+    background: #ddd
+}
+
+.about_main .content .about-list .sub-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 60px;
+    font-weight: 600
+}
+
+.about_main .content .about-list .brand .sub-title {
+    margin: 27px 0 29px
+}
+
+.about_main .content .about-list .teletext {
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 63px
+}
+
+.about_main .content .about-list .teletext .image {
+    margin-top: 30px;
+    position: relative
+}
+
+.about_main .content .about-list .teletext .image .qrcode {
+    width: 131px;
+    height: 131px;
+    position: absolute;
+    bottom: -80px;
+    left: 54px;
+    background: url(/images/jobscode.png);
+    background-size: cover
+}
+
+.about_main .content .about-list .teletext .image .qrcode:before {
+    content: '\20';
+    width: 131px;
+    height: 131px;
+    position: absolute;
+    left: -12px;
+    top: -12px;
+    border: 12px solid #fff;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px rgba(0,0,0,.2)
+}
+
+.about_main .content .about-list .teletext .descript {
+    color: #333;
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 20px;
+    text-align: center
+}
+
+.about_main .content .about-list .contact .teletext {
+    font-size: 16px;
+    font-weight: 600
+}
+
+.about_main .content .about-list .contact .descript {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 100
+}
+
+.about_main .content .about-list .contact .icon {
+    padding-left: 28px;
+    position: relative
+}
+
+.about_main .content .about-list .contact .text {
+    line-height: 22px;
+    margin-bottom: 10px
+}
+
+.about_main .content .about-list .contact .text.descript {
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 20px
+}
+
+.about_main .content .about-list .contact .text.other {
+    margin-bottom: 20px
+}
+
+.about_main .content .about-list .contact .mail,.about_main .content .about-list .contact .tel {
+    display: inline-block
+}
+
+.about_main .content .about-list .model .teletext {
+    margin-top: 19px
+}
+
+.about_main .content .about-list .statement .teletext .title {
+    margin: 60px auto 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000
+}
+
+.about_main .content .about-list .statement .teletext .content-wrapper {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.about_main .content .about-list .statement .teletext .content-wrapper .content {
+    text-indent: 26px;
+    margin-bottom: 20px
+}
+
+.about_main .content .about-list .statement .teletext .content-wrapper .content:last-child {
+    margin-bottom: 0
+}
+
+.about_main .content .about-list .statement .teletext .content-wrapper .mark {
+    text-align: right
+}
+
+.about_main .content .about-list .statement .teletext .foot-banner {
+    width: 600px;
+    height: 100px;
+    margin: 30px auto 0;
+    background-color: #0A1A72;
+    position: relative
+}
+
+.about_main .content .about-list .statement .teletext .foot-banner img {
+    width: 220.5px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 190px
+}
+
+.about_main .content .about-list .joinus .descript {
+    margin-top: 58px
+}
+
+.about_main .content .about-list .videobox {
+    position: relative
+}
+
+.about_main .content .about-list .videobox #play {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/play.jpg) no-repeat
+}
+
+#footer {
+    margin: 0
+}

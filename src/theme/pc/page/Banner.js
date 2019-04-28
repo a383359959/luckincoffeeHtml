@@ -1,11 +1,22 @@
 import React from 'react';
 import Swiper from 'swiper';
+import $ from 'jquery';
 
 class Banner extends React.Component {
 
     componentDidMount() {
 
+        let _this = this;
+
         this.resize();
+
+        document.body.onresize = function () {
+            if ($(window).width() >= 1140){
+                _this.resize();
+            }else{
+
+            }
+        }
 
         const banner = new Swiper('.swiper-container', {
             loop: true,

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import $ from 'jquery';
-
 import CommonHeader from './CommonHeader';
 import Banner from './Banner';
 import CommonFooter from './CommonFooter';

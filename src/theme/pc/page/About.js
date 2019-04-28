@@ -2,10 +2,10 @@ import React from 'react';
 import $ from 'jquery';
 
 import CommonHeader from './CommonHeader';
-import Main from './Main';
+import AboutMain from './AboutMain';
 import CommonFooter from './CommonFooter';
 
-class Index extends React.Component {
+class About extends React.Component {
 
     componentDidMount() {
 
@@ -18,37 +18,35 @@ class Index extends React.Component {
             } else {
                 $('#gotoTop').removeClass('show');
             }
-            // 显示动画
-            _this.showAnimate('commitment', top);
-            _this.showAnimate('product', top);
-            _this.showAnimate('gold', top);
-            _this.showAnimate('about', top);
-            _this.showAnimate('cooperation', top);
-            _this.showAnimate('other', top);
+        });
+
+        $('.nav').bind('click', function(){
+            var index = $(this).index();
+            if (index == 4) return '';
+            $('.nav .nav-item').removeClass('active');
+            $(this).find('.nav-item').addClass('active');
+            $('.about-item').hide();
+            $('.about-item').eq(index).show();
         });
 
     }
 
-    showAnimate(el, scrollTop) {
-        if (document.getElementById(el)) {
-            var top = document.getElementById(el).offsetTop;
-            if (top >= scrollTop && top < (scrollTop + $(window).height())) {
-                $('#' + el).find('.item-wrap').addClass('show-animate');
-            }
-        }
-    }
-
     render() {
+
         return (
             <div id={'docwrap'}>
                 <CommonHeader />
-                <Main />
+                <div id={'banner'} className={'banner-wrap'}>
+                    <div className={'banner'}></div>
+                </div>
+                <AboutMain />
                 <CommonFooter />
                 <div id={'gotoTop'}></div>
             </div>
         );
+
     }
 
 }
 
-export default Index;
+export default About;
